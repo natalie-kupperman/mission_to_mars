@@ -9,14 +9,12 @@ import pandas as pd
 from selenium import webdriver
 
 
+def init_browser():
+    browser = Browser("chrome", headless=False)
+    return browser
 
 def scrape():
 
-    def init_browser():
-
-        executable_path = {"executable_path": 'chromedriver.exe'}
-
-        return Browser("chrome", **executable_path, headless=False)
 
     #-------------------------MARS NEWS-----------------------------
 
